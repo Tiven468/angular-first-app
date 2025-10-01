@@ -1,59 +1,30 @@
-# FirstAngularApp
+# Prueba tecnica  Angular con JSON Server
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+Este proyecto fue generado utilizando [Angular CLI](https://github.com/angular/angular-cli) y se complementa con **json-server** para simular un backend y realizar peticiones HTTP.
 
-## Development server
+## Requisitos
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Node.js y npm instalados
+- Angular CLI instalado de forma global
+- json-server instalado de forma global
 
 ```bash
-ng generate component component-name
-```
+npm install -g @angular/cli
+npm install -g json-server
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para iniciar el servidor de desarrollo de Angular, ejecutar:
+ng serve, ng s, o tambien npm start
 
-```bash
-ng generate --help
-```
+Abrir el navegador en http://localhost:4200/. La aplicación se recargará automáticamente al modificar los archivos.
 
-## Building
+JSON Server
+    Crear el archivo db.json en la raíz del proyecto.
+    Agregar los datos iniciales dentro del archivo en formato JSON.
+    Levantar el servidor con el comando:
+json-server --watch db.json
+El servidor quedará disponible en http://localhost:3000/.
 
-To build the project run:
+Mis aprendizajes en este proceso fueron principalmente aprender sobre Angular, unirlo a un backend usando json-server, lo que me permitió entender mucho mejor cómo funcionan las peticiones HTTP y el manejo de errores, gracias al tutorial y a un video externo pude comprender el flujo básico de Angular, ya que antes tenía muy poco conocimiento sobre el, y ahora entiendo mejor su estructura, la división en componentes para una mejor organización, así como el manejo de rutas y peticiones, además, aprendí a integrar recursos externos cuando la documentación oficial no era suficiente, lo que me ayudó a reforzar mi comprensión y a sentirme más seguro trabajando con Angular no obstante me gustaria seguir aprendiendo
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Recursos
+Cuando tenia dudas o errores me apoyé en este tutorial de YouTube: https://www.youtube.com/watch?v=yg3zS52FH8M&list=PLrAw40DbN0l2XNbdFx0GvoRdzsyqTsdmP 
