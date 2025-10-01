@@ -10,6 +10,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('first-angular-app');
+  title: string = "homes"
 }
 
